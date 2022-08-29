@@ -1,0 +1,1 @@
+./odoo-bin --addons-path=/home/superwiku/odooproject/minimarket/addons,/home/superwiku/odooproject/minimarket/addonswiku --xmlrpc-port=8069 --db_port 5432 -d minimart310 --limit-memory-hard 0 --limit-time-real=10000 -u wikumart
