@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- wikumart.cleaningservice inherit tree view -->
+    <record id="wikumart_cleaningservice_view_tree_inherit" model="ir.ui.view">
+        <field name="name">wikumart.cleaningservice.inherit.view.tree</field>
+        <field name="model">wikumart.cleaningservice</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="wikumart_person_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="id_cln"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- wikumart.cleaningservice inherit form view -->
+    <record id="wikumart_cleaningservice_view_form_inherit" model="ir.ui.view">
+        <field name="name">wikumart.cleaningservice.inherit.view.form</field>
+        <field name="model">wikumart.cleaningservice</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="wikumart_person_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="id_cln"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- wikumart.cleaningservice action window -->
+    <record id="wikumart_cleaningservice_action" model="ir.actions.act_window">
+        <field name="name">wikumart.cleaningservice.action</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wikumart.cleaningservice</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="wikumart_cleaning_menu_act" 
+                name="Cleaning Service" 
+                parent="wikumart_pegawai_menu_categ" 
+                action="wikumart_cleaningservice_action" 
+                sequence="30"/>
+
+</odoo>

@@ -1,3 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_wikumart_kelompokbarang,access.wikumart.kelompokbarang,model_wikumart_kelompokbarang,,1,1,1,1
 access_wikumart_barang,access.wikumart.barang,model_wikumart_barang,,1,1,1,1
+access_wikumart_person,access.wikumart.person,model_wikumart_person,,1,1,1,1
+access_wikumart_kasir,access.wikumart.kasir,model_wikumart_kasir,,1,1,1,1
+access_wikumart_cleaningservice,access.wikumart.cleaningservice,model_wikumart_cleaningservice,,1,1,1,1
+access_wikumart_supplier,access.wikumart.supplier,model_wikumart_supplier,,1,1,1,1
+access_wikumart_penjualan,access.wikumart.penjualan,model_wikumart_penjualan,,1,1,1,1
+access_wikumart_detailpenjualan,access.wikumart.detailpenjualan,model_wikumart_detailpenjualan,,1,1,1,1
+
+

@@ -18,4 +18,9 @@
               parent="wikumart_menu_root" 
               sequence="20"/>
 
+    <menuitem id="wikumart_transaksi_menu_categ" 
+              name="Transaksi" 
+              parent="wikumart_menu_root" 
+              sequence="42"/>
+
 </odoo>
